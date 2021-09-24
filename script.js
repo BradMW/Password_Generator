@@ -15,7 +15,7 @@ console.log(password);
 const capital = ["A", "B", "C", "D", "E"]
 const lower = ["a", "b", "c", "d"]
 const number = [1,2,3,4,5,6,7,8,9]
-const symbol = ["!", "$", "@"]
+const symbol = ["!", "$", "@", "#", "<", ">", "*"]
 
 let bigarray = []
 
@@ -55,7 +55,7 @@ function generatePassword() {
 
     // var text = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789!@#$%^&*(){}[];:.>,</?";
     var password = "";
-    for (var i = 0; i < length; i++); {
+    for (var i = 0; i < length; i++) {
         password = password + bigarray[Math.floor(Math.random() * bigarray.length)];
         // console.log(bigarray[Math.floor(Math.random() * bigarray.length)]);
     }
